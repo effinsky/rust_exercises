@@ -149,7 +149,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust_codewars"
+name = "rust_exercises"
 version = "0.1.0"
 dependencies = [
  "anyhow",
