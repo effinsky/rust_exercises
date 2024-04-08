@@ -1,0 +1,12 @@
+max_width = 80
+comment_width = 80
+format_strings = true
+wrap_comments = true
+# hard_tabs = false
+tab_spaces = 4
+enum_discrim_align_threshold = 20
+struct_field_align_threshold = 20
+# struct_lit_single_line = true
+# struct_lit_width = 40
+reorder_imports = true
+fn_single_line = true
