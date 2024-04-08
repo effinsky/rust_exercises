@@ -9,4 +9,4 @@ struct_field_align_threshold = 20
 # struct_lit_single_line = true
 # struct_lit_width = 40
 reorder_imports = true
-fn_single_line = true
+# fn_single_line = true
