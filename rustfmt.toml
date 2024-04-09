@@ -1,5 +1,5 @@
-max_width = 80
-comment_width = 80
+max_width = 90
+comment_width = 90
 format_strings = true
 wrap_comments = true
 # hard_tabs = false

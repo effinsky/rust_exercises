@@ -1,3 +1,4 @@
+pub mod binom_coeff;
 pub mod binsearch;
 pub mod encode;
 pub mod insert_at;

@@ -1,6 +1,7 @@
 #![allow(unused)]
 mod exercises;
 
+use exercises::binom_coeff::binomial_coefficient;
 use exercises::encode::encode;
 use exercises::insert_at::insert_at;
 use exercises::permutation::permutate;
@@ -30,6 +31,9 @@ fn main() {
     println!("before permutation: {:?}", &src_for_permutation);
     let permutated = permutate(&src_for_permutation);
     println!("after permutation: {:?}", &permutated);
+
+    let bcoeff = binomial_coefficient(12, 3);
+    dbg!(bcoeff);
 }
 
 pub fn sum(l: &[i32]) -> i32 {
@@ -81,10 +85,7 @@ fn flatten_uber<T>(inp: &[Node<T>]) -> Vec<T>
 where
     T: Clone + Debug,
 {
-    fn flatten_inner<A: Clone + Debug>(
-        inp: &[Node<A>],
-        mut res: Vec<A>,
-    ) -> Vec<A> {
+    fn flatten_inner<A: Clone + Debug>(inp: &[Node<A>], mut res: Vec<A>) -> Vec<A> {
         match inp[..] {
             [] => res,
             [ref h, ref t @ ..] => match h {
